@@ -1,0 +1,23 @@
+<!--<form [formGroup]="this.loginForm" > -->
+    <form >
+        <div id="login-box">
+            <div class="left">
+             <h1><mat-icon>lock_open</mat-icon>Login</h1>
+          
+               <input type="text" name="email" placeholder="E-mail"   required="required" id="email" [(ngModel)]="credentials.email"/>	
+              <input type="password" name="motDePasse" placeholder="Mot de passe"  required="required" id="motDePasse" [(ngModel)]="credentials.motDePasse" />
+              <button class="btn"  (click)=userLogin() >Connexion</button><br><br>
+              <!--<button type="submit" name="signup_submit" value="Connexion" (ngSubmit)="userLogin()" ></button><br><br>
+              --><div class="Register">
+                  <span class="compte" routerLink="/register">Créer un compte !</span>
+               </div>
+            </div>
+          
+            <div class="right">
+              <button  class="social-signin facebook" (click)="loginWithFecebook()"><mat-icon id="iconfecebook">facebook</mat-icon>Login avec fecebook</button>
+              <button class="social-signin google"  (click)="loginWithGoogle()">	<mat-icon id="icongoogle">alternate_email</mat-icon>Login avec Google+</button>
+            </div>
+            <div class="or">Ou</div>
+         
+          </div>
+        </form>

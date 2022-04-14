@@ -1,0 +1,41 @@
+#range-label {
+    width:15%;
+    padding:5px;
+    background-color: #1077C3;
+    color:white;
+    border-radius: 5px;
+    font-size: 17px;
+    position: relative;
+    top:-8px;
+   }
+
+ .form-input {
+    font-size: 17px;
+    box-sizing: border-box;
+    margin-left: 150px;
+    width: 66%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+.btn {
+  margin-top: 15px;
+  margin-left: 400px;
+  width: 300px;
+  height: 32px;
+  background:  #1077C3;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+

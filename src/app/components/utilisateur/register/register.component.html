@@ -1,0 +1,90 @@
+<form >
+<!--<form [formGroup]="this.crudApi.dataForm" (ngSubmit)="onSubmit()">  -->
+    <!-- <form [formGroup]="register" >   --> 
+        <div class="form-body">
+          <h1><mat-icon id="register">perm_identity</mat-icon>Inscription</h1><br>
+            <!-- Firstname and Lastname -->
+         <div class="horizontal-group">
+                <div class="form-group left">
+                    <label for="nom" class="label-title"  >Nom</label>
+                    <input type="text"  class="form-input" placeholder="entrer votre nom" name="nom" required="required" id="nom" [(ngModel)]="credentials.nom" />
+                </div>
+                <div class="form-group right">
+                    <label for="prenom" class="label-title"  >Prénom</label>
+                    <input type="text"  class="form-input" placeholder="entrer votre prenom" name="prenom" required="required" id="prenom"[(ngModel)]="credentials.prenom" />
+                </div>
+                <div class="form-group left">
+                    <label for="firstname" class="label-title"  >Email</label>
+                    <input type="text" class="form-input" placeholder="entrer votre email" name="email" required="required" id="email" [(ngModel)]="credentials.email"  />
+                </div>
+                <div class="form-group right">
+                    <label for="lastname" class="label-title"  >Mot de passe</label>
+                    <input type="text"  class="form-input" placeholder="entrer votre mot de passe" name="motDePasse" required="required" id="motDePasse" [(ngModel)]="credentials.motDePasse"  />
+                </div>
+                <div class="form-group left">
+                    <label for="firstname" class="label-title"  >Télephone</label>
+                    <input type="text"  class="form-input" placeholder="entrer votre telephone" name="telephone" required="required"  id="telephone" [(ngModel)]="credentials.telephone" />
+                </div>
+                <div class="form-group right">
+                    <label for="lastname" class="label-title"  >Adresse</label>
+                    <input type="text" class="form-input" placeholder="entrer votre adresse" name="adresse" required="required" id="adresse" [(ngModel)]="credentials.adresse" />
+                </div>
+        
+              <div class="form-group left">
+                    <label for="firstname" class="label-title" name="sexe">Séxe</label>
+                    <select name="select" class="form-input" name="sexe" required="required" [(ngModel)]="credentials.sexe"  >
+                        <option  class="form-input" selected value = "homme">Homme</option> 
+                        <option  class="form-input" value = "femme">Femme</option>
+                        </select>
+                </div>
+                <div class="form-group right">
+                    <label for="lastname" class="label-title"  >Nationalité</label>
+                    <input type="text" class="form-input" placeholder="entrer votre nationalité" name="nationalite" required="required" id="adresse" [(ngModel)]="credentials.nationalite" />
+                </div>
+                <div class="form-group left">
+                    <label for="lastname" class="label-title"  >Pseudoname</label>
+                    <input type="text" class="form-input" placeholder="entrer votre pseudoname" name="pseudoname" required="required" id="pseudoname" [(ngModel)]="credentials.pseudoname" />
+                </div>
+                <div class="form-group right">
+                    <label for="lastname" class="label-title"  >Ville de résidence</label>
+                    <input type="text" class="form-input" placeholder="entrer votre ville de résidence" name="villeResidence" required="required" id="villeResidence" [(ngModel)]="credentials.villeResidence" />
+                </div>
+
+                <div class="form-group left">
+                    <label for="lastname" class="label-title"  >Sport preféré</label>
+                    <input type="text" class="form-input" placeholder="entrer votre sport preféré" name="pseudoname" required="required" id="sportPrefere" [(ngModel)]="credentials.sportPrefere" />
+                </div>
+
+                <div class="form-group right">
+                    <label for="lastname" class="label-title"  >Equipe Preféré</label>
+                    <input type="text" class="form-input" placeholder="entrer votre équipe preféré" name="equipePrefere" required="required" id="équipePrefere" [(ngModel)]="credentials.equipePrefere" />
+                </div>
+               
+                <div class="form-group left">
+                    <label for="firstname" class="label-title" name="positionDeJeu">Position de jeu</label>
+                    <select name="select" class="form-input" name="positionDeJeu" required="required" [(ngModel)]="credentials.positionDeJeu"  >
+                        <option  class="form-input" selected value = "gardienDebut">Gardien de but</option> 
+                        <option  class="form-input" value = "arriéresLatéraux">Arriéres latéraux</option>
+                        <option  class="form-input" value = "stoppeur">Stoppeur</option> 
+                        <option  class="form-input" value = "libéro">Libéro</option>
+                        <option  class="form-input" value = "milieuxDéfensifs">Milieux défensifs</option> 
+                        <option  class="form-input" value = "milieuxOffensifs">Milieux offensifs</option>
+                        <option  class="form-input" value = "attaquant">Attaquant</option> 
+                        <option  class="form-input" value = "avantCentre">L'avant-centre</option>
+                        </select>
+                </div>
+
+                <div class="form-group right">
+                    <label for="lastname" class="label-title"  >Duree d'experience</label>
+                    <input type="text" class="form-input" placeholder="entrer votre duree d'experience" name="dureeExperience" required="required" id="dureeExperience" [(ngModel)]="credentials.dureeExperience" />
+                </div>
+
+             <button class="butn" (click)="registration()" >Enregistrer</button>
+            </div>
+            <div class=""> <br>
+                <span routerLink="/" class="compte">Vous avez déja un compte ? Login !</span>
+            </div>
+        
+        </div>
+        </form>
+        

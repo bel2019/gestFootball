@@ -1,0 +1,59 @@
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-white">
+
+<app-layout></app-layout>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+    <header class="w3-container" style="padding-top:22px">
+        <h5><b><i class="fa fa-list"></i> Liste des utilisateurs</b></h5>
+      </header>
+    <br>
+   
+        <table class="table table-striped">
+        <thead>
+        <tr>
+        <th scope="col">Nom</th>
+        <th scope="col">Prenom </th>
+        <th scope="col">Email </th>
+        <th scope="col">Telephone </th>
+        <th scope="col">Adresse </th>
+        <th scope="col">Sexe </th>
+        <th scope="col">Ville de résidence</th>
+        <th scope="col">Position de jeu </th>
+        
+        
+        </tr>
+        </thead>
+        <tbody>
+    
+    
+        <tr *ngFor="let item of userService.list ">
+         <td>{{item.nom}}</td>
+        <td>{{item.prenom}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.telephone}}</td>
+        <td>{{item.adresse}}</td>
+        <td>{{item.sexe}}</td>
+        <td>{{item.villeResidence}}</td>
+        <td>{{item.positionDeJeu}}</td>
+       
+       
+       
+        
+        </tr>
+             </tbody>
+             </table>
+             </div>
+            
+
+</body>
